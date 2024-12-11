@@ -25,7 +25,7 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
         {tt}
       </Head>
       <main className="flex min-h-screen flex-col p-6">
-        <img src='orbia.jpg' width={'100%'} />
+        <img src='/orbia.jpg' width={'100%'} />
       </main>
     </>
   );
