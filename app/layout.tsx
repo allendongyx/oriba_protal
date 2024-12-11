@@ -9,9 +9,6 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <Head>
-        <title>Welcome Oriba</title>
-        <meta name="description" content={"123"} />
         <Script strategy="lazyOnload">{`<!-- TikTok Pixel Code Start -->
 <script>
 !function (w, d, t) {
@@ -25,7 +22,6 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
 }(window, document, 'ttq');
 </script>
 <!-- TikTok Pixel Code End -->`}</Script>
-      </Head>
       <body>{children}</body>
     </html>
   );

@@ -4,6 +4,13 @@ import Head from "next/head";
 import Script from "next/script";
 import Link from "next/link";
 
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'Welcome Oriba',
+}
+ 
+
 export default function Page() {
   return (
     <>
