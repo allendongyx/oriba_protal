@@ -1,8 +1,8 @@
-import AcmeLogo from '@/app/ui/acme-logo';
-import { ArrowRightIcon } from '@heroicons/react/24/outline';
-import Head from 'next/head'; // 修复：从正确的路径导入 Head 组件
-import Script from 'next/head'; // 修复：从正确的路径导入 Head 组件
-import Link from 'next/link';
+import AcmeLogo from "@/app/ui/acme-logo";
+import { ArrowRightIcon } from "@heroicons/react/24/outline";
+import Head from "next/head"; // 修复：从正确的路径导入 Head 组件
+import Script from "next/script";
+import Link from "next/link";
 
 export default function Page() {
   const tt = `<!-- TikTok Pixel Code Start -->
@@ -17,18 +17,16 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
   ttq.page();
 }(window, document, 'ttq');
 </script>
-<!-- TikTok Pixel Code End -->`
+<!-- TikTok Pixel Code End -->`;
   return (
     <>
       <Head>
         <title>Welcome Oriba</title>
         <meta name="description" content={"123"} />
-        <Script >
-        {tt}
-      </Script>
+        <Script strategy="lazyOnload">{tt}</Script>
       </Head>
       <main className="flex min-h-screen flex-col p-6">
-        <img src='/orbia.jpg' width={'100%'} />
+        <img src="/orbia.jpg" width={"100%"} />
       </main>
     </>
   );
