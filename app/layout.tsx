@@ -7,7 +7,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
 
-  const tt = `<!-- TikTok Pixel Code Start -->
+  return (
+    <html lang="en">
+      <Head>
+        <title>Welcome Oriba</title>
+        <meta name="description" content={"123"} />
+        <Script strategy="lazyOnload">{`<!-- TikTok Pixel Code Start -->
 <script>
 !function (w, d, t) {
   w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
@@ -19,13 +24,7 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
   ttq.page();
 }(window, document, 'ttq');
 </script>
-<!-- TikTok Pixel Code End -->`;
-  return (
-    <html lang="en">
-      <Head>
-        <title>Welcome Oriba</title>
-        <meta name="description" content={"123"} />
-        <Script strategy="lazyOnload">{tt}</Script>
+<!-- TikTok Pixel Code End -->`}</Script>
       </Head>
       <body>{children}</body>
     </html>
