@@ -20,12 +20,12 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
   return (
     <>
       <Head>
-        <title>Oriba</title>
+        <title>        Welcome Oriba        </title>
         <meta name="description" content={"123"} />
         {tt}
       </Head>
       <main className="flex min-h-screen flex-col p-6">
-        Welcome Oriba
+        <img src='orbia.jpg' width={'100%'} />
       </main>
     </>
   );
